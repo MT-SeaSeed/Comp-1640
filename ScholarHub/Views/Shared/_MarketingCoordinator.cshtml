@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Scholar's Hub</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/ScholarHub.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/marketingCoordinator/MarketingCoordinator.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar hide-on-tablet">
+                <h2 class="text-white">Welcome Coordinator</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-sidebar" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            User
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-sidebar">
+                            <li><a class="dropdown-item dropdown-item-sidebar" href="#">Show All User</a></li>
+                            <li><a class="dropdown-item dropdown-item-sidebar" href="#">Add A User</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Change Closure Date</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navbar -->
+            <nav class="navbar col-md-10 navbar-expand-lg navbar-dark custom-navbar">
+                <div class="container-fluid container-fluid-navbar">
+                    <a class="navbar-brand text-white" id="coordinator-dashboard-title" href="#">Marketing Coordinator Dashboard</a>
+                    <button class="navbar-toggler custom-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex align-items-center ms-auto">
+
+                            <div class="me-3 text-white">
+                                User Name
+                            </div>
+                            <a class="btn me-3 bg-dark text-white" asp-area="" asp-controller="Account" asp-action="Logout">Log Out</a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--Navbar-->
+            <div class="col-md-10 main-content">
+                <!-- Main content goes here -->
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

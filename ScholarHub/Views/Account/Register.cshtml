@@ -1,0 +1,161 @@
+﻿
+@{
+    ViewData["Title"] = "Register";
+}
+<!---
+<h1 class="mt-3 mb-3 h3">Register</h1>
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">User Id</label>
+        <input type="text" id="userId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" id="fullName" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" id="password" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" id="phoneNumber" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Role</label>
+        <select id="role" class="form-select" aria-label="Role">
+            <option selected disabled>Select Role</option>
+            <option value="student">Student</option>
+            <option value="guest">Guest</option>
+        </select>
+    </div>
+    
+    
+    <div class="mb-3">
+        <label class="form-label">Faculty</label>
+        <select id="faculty" class="form-select" aria-label="AcademicYear">
+            <option selected disabled>Select Faculty</option>
+            <option value="Marketing">Marketing</option>
+            <option value="IT">IT</option>
+            <option value="Design">Graphic Design</option>
+            
+            
+                Sau này chỉnh code như thế này
+                <div class="mb-3">
+                    <label class="form-label">Faculty</label>
+                    <select class="form-select" asp-items="Model.Faculty" asp-for="Faculty">
+                </select>
+                </div>
+                
+        </select>
+    </div>
+  
+  
+    <div class="mb-3">
+        <label class="form-label">Academic Year</label>
+        <select id="academicYear" class="form-select" aria-label="AcademicYear">
+            <option selected disabled>Select Academic Year</option>
+            <option value="2020">2020-2021</option>
+            <option value="2021">2021-2022</option>
+            <option value="2022">2022-2023</option>
+            <option value="2023">2023-2024</option>
+            <option value="2024">2024-2025</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-dark text-center">Register</button>
+    </div>
+</form>
+
+<div class="text-center">
+    <label class="form-label">Already Have An Account?</label>
+    <a class="text-primary" asp-controller="Account" asp-action="Login">Log In</a>
+</div>
+-->
+<form>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row register-page">
+                <div class="col-md-6 side-image" style="background-image: url('https://images.pexels.com/photos/19786702/pexels-photo-19786702/free-photo-of-university-of-greenwich.jpeg?auto=compress&cs=tinysrgb&w=800');">
+                    <div class="text">
+                        <p>Join the community of developers <i>- Scholar Hub</i></p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 right">
+
+                    <div class="input-box">
+
+                        <header>Register</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="userId" required="" autocomplete="off">
+                            <label for="userId">User Id</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="fullname" required="" autocomplete="off">
+                            <label for="fullname">Full Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="password" required="">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="email" required="" autocomplete="off">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="phoneNumber" required="" autocomplete="off">
+                            <label for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="select-field">
+
+                            <select id="role" class="form-select" aria-label="Role">
+                                <option selected disabled>Select Role</option>
+                                <option value="student">Student</option>
+                                <option value="guest">Guest</option>
+                            </select>
+                        </div>
+                        <div class="select-field">
+                            <select id="faculty" class="form-select" aria-label="AcademicYear">
+                                <option selected disabled>Select Faculty</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="IT">IT</option>
+                                <option value="Design">Graphic Design</option>
+                            </select>
+                        </div>
+
+                        <div class="select-field">
+
+                            <select id="academicYear" class="form-select" aria-label="AcademicYear">
+                                <option selected disabled>Select Academic Year</option>
+                                <option value="2020">2020-2021</option>
+                                <option value="2021">2021-2022</option>
+                                <option value="2022">2022-2023</option>
+                                <option value="2023">2023-2024</option>
+                                <option value="2024">2024-2025</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="submit" class="submit" value="Register">
+                        </div>
+                        <div class="signin">
+                            <span>Already Have An Account? <a class="text-primary" asp-controller="Account" asp-action="Login">Log In</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
