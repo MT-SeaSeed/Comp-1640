@@ -144,7 +144,7 @@ i {
 .input-box header {
     font-weight: 700;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 .input-field {
@@ -234,7 +234,7 @@ span a {
 
     .text {
         position: absolute;
-        top: 70%;
+        top: 60%;
         text-align: center;
     }
 
@@ -272,6 +272,21 @@ span a {
     pointer-events: none;
     transition: .5s;
 }
+.side-image1 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+@media only screen and (max-width: 768px) {
+    .side-image1 {
+        border-radius: 10px 10px 0 0;
+        height: 90px;
+    }
+}
+
+
 
 
 
